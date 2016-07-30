@@ -351,7 +351,7 @@ body {
         background: url("../img/avatar-background.png") no-repeat center center;
         margin: 0 auto;
         height: 155px;
-        width: 154px;
+        width: 155px;
         transform: translateX(-10px);
         transition: all 1s; }
       .right-col .login-panel-main .avatar-container .avatar-mask {
@@ -359,7 +359,7 @@ body {
         overflow: hidden;
         height: 125px;
         width: 125px;
-        transform: translate(20px, 15px); }
+        transform: translate(16px, 13px); }
       .right-col .login-panel-main .avatar-container .user-avatar {
         margin: 0 auto;
         height: 125px;
@@ -489,7 +489,7 @@ body {
         overflow: hidden;
         height: 125px;
         width: 125px;
-        transform: translate(20px, 15px); }
+        transform: translate(16px, 13px); }
       .right-col .login-panel-switcher li .avatar-name {
         text-align: center; }
         .right-col .login-panel-switcher li .avatar-name .username {

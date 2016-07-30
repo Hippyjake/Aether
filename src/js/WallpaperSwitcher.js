@@ -151,7 +151,7 @@ define(['exports', 'src/dist/js/inferno.min', 'src/dist/js/inferno-component.min
         if (typeof Storage !== "undefined") {
           // Set a default wallpaper if none found.
           if (localStorage.getItem("wallpaper") === null) {
-            localStorage.setItem("wallpaper", "abstract.jpg");
+            localStorage.setItem("wallpaper", "BlackMesa.jpg");
           }
 
           var wallpaperImage = localStorage.getItem("wallpaper");
