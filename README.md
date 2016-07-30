@@ -1,10 +1,10 @@
-# Aether
-###### ( lightdm-webkit-theme-aether )
+# Mesa
+###### ( lightdm-webkit-theme-Mesa )
 Inspired by a lifelong love with space. 
 
 A Sleek, straightforward Archlinux themed login screen written on lightdm and the lightdm-webkit2-greeter.
 
-**Try it out [here, at the live demo](https://noisek.github.io/Aether/).**
+**Try it out [here, at the live demo](https://noisek.github.io/Mesa/).**
 
 ![](../screenshots/screenshot.png)
 
@@ -27,10 +27,10 @@ A Sleek, straightforward Archlinux themed login screen written on lightdm and th
 
 **Recommended Automatic Installation**
 
-[Available on the AUR](https://aur.archlinux.org/packages/lightdm-webkit-theme-aether/). ArchLinux users can substitute pacaur with yaourt, packer, etc. as necessary and install with the following:
+[Available on the AUR](https://aur.archlinux.org/packages/lightdm-webkit-theme-Mesa/). ArchLinux users can substitute pacaur with yaourt, packer, etc. as necessary and install with the following:
 
 ```
-pacaur -S lightdm-webkit-theme-aether
+pacaur -S lightdm-webkit-theme-Mesa
 ```
 
 **Manual Installation**
@@ -38,12 +38,12 @@ pacaur -S lightdm-webkit-theme-aether
 This assumes that you already have lightdm and lightdm-webkit2-greeter installed (but not configured).
 
 ```
-# If you prefer the last stable release, download from the releases page instead: https://github.com/NoiSek/Aether/releases/latest
-git clone git@github.com:NoiSek/Aether.git
-sudo cp --recursive Aether /usr/share/lightdm-webkit/themes/Aether
+# If you prefer the last stable release, download from the releases page instead: https://github.com/NoiSek/Mesa/releases/latest
+git clone git@github.com:NoiSek/Mesa.git
+sudo cp --recursive Mesa /usr/share/lightdm-webkit/themes/Mesa
 
-# Set default lightdm-webkit2-greeter theme to Aether
-sudo sed -i 's/^webkit-theme\s*=\s*\(.*\)/webkit-theme = lightdm-webkit-aether #\1/g' etc/lightdm/lightdm-webkit2-greeter.conf
+# Set default lightdm-webkit2-greeter theme to Mesa
+sudo sed -i 's/^webkit-theme\s*=\s*\(.*\)/webkit-theme = lightdm-webkit-Mesa #\1/g' etc/lightdm/lightdm-webkit2-greeter.conf
 
 # Set default lightdm greeter to lightdm-webkit2-greeter
 sudo sed -i 's/^\(#?greeter\)-session\s*=\s*\(.*\)/greeter-session = lightdm-webkit2-greeter #\1/ #\2g' etc/lightdm/lightdm.conf
@@ -53,7 +53,7 @@ sudo sed -i 's/^\(#?greeter\)-session\s*=\s*\(.*\)/greeter-session = lightdm-web
 
 ![](./src/img/default-user.png)
 
-Once LightDM, LightDM Webkit Greeter, and Aether are installed you will need to set an avatar image for your users. Size is irrelevant, and avatars will be displayed as a 125x125 circle (Yes, square images too). Users that don't have an avatar set will default to the [astronaut](./src/img/default-user.png).
+Once LightDM, LightDM Webkit Greeter, and Mesa are installed you will need to set an avatar image for your users. Size is irrelevant, and avatars will be displayed as a 125x125 circle (Yes, square images too). Users that don't have an avatar set will default to the [astronaut](./src/img/default-user.png).
 
 To accomplish this, you can do either of the following: 
 - Create an image in your home directory named `.face`.
