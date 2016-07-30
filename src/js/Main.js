@@ -41,6 +41,10 @@ define(['exports', 'src/dist/js/inferno.min', 'src/dist/js/inferno-component.min
     // Add notifications to the global scope for error handling
     window.notifications = new _Notifications.Notifications();
 
+    if (window.debug === true) {
+      window.notifications.generate("Hey there! TIP: Click the logo to switch wallpapers.", 'info', 10000);
+    }
+
     _infernoDom2.default.render(bp0(_CommandPanel.CommandPanel, {
       backgrounds: BACKGROUNDS
     }), document.getElementById("command-panel"));

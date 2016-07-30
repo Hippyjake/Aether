@@ -38,11 +38,15 @@ define(['exports'], function (exports) {
 
     _createClass(Notifications, [{
       key: 'generate',
-      value: function generate(message, type) {
+      value: function generate(message, type, delay) {
         var _this = this;
 
         if (type === undefined) {
           type = "";
+        }
+
+        if (delay === undefined) {
+          delay = 5000;
         }
 
         var notification = document.createElement('div');
@@ -55,7 +59,7 @@ define(['exports'], function (exports) {
           setTimeout(function () {
             _this.container.removeChild(notification);
           }, 500);
-        }, 5000);
+        }, delay);
       }
     }]);
 

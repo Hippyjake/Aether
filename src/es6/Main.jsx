@@ -36,6 +36,10 @@ export default function Main() {
   // Add notifications to the global scope for error handling
   window.notifications = new Notifications();
 
+  if (window.debug === true) {
+    window.notifications.generate("Hey there! TIP: Click the logo to switch wallpapers.", 'info', 10000);
+  }
+
   InfernoDOM.render(<CommandPanel backgrounds={ BACKGROUNDS } />, document.getElementById("command-panel"));
   InfernoDOM.render(<LoginPanel />, document.getElementById("login-panel"));
 }

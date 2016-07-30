@@ -3,9 +3,13 @@ export class Notifications {
     this.container = document.querySelectorAll('.notifications-container')[0];
   }
 
-  generate(message, type) {
+  generate(message, type, delay) {
     if (type === undefined) {
       type = "";
+    }
+
+    if (delay === undefined) {
+      delay = 5000;
     }
 
     let notification = document.createElement('div');
@@ -18,6 +22,6 @@ export class Notifications {
       setTimeout(() => {
         this.container.removeChild(notification);
       }, 500);
-    }, 5000);
+    }, delay);
   }
 }
